@@ -2,8 +2,12 @@
 <%@ page import="java.util.List" %>
 <%@ page import="CafeteriaApp.MenuItem" %>
 <!DOCTYPE html>
+<body style="background-color:pink;">
+<img src="https://www.kewpie.co.jp/recipes/basicokazu/okazu01/imgs/img_mv.jpg">
+
 <html>
 <head>
+
 	<meta charset="UTF-8">
     <title>メニュー</title>
 </head>
