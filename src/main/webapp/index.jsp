@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<title>食堂アプリ</title>
 </head>
+<body background="shokudo.jpg">
 <body>
 	<h1>うめコミへようこそ！</h1>
     <a href="addMenuItem.jsp">メニューを追加</a><br>
