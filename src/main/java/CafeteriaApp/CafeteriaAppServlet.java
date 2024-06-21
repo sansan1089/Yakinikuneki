@@ -16,12 +16,15 @@ public class CafeteriaAppServlet extends HttpServlet {
     private List<Review> reviews = new ArrayList<>();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    	request.setCharacterEncoding("UTF-8");
         String action = request.getParameter("action");
 
         if (action.equals("addMenuItem")) {
             String name = request.getParameter("name");
-            double price = Double.parseDouble(request.getParameter("price"));
-            menu.add(new MenuItem(name, price));
+            int price = Integer.parseInt(request.getParameter("price"));
+            if(findMenuItemByName(name)==null) {
+            	menu.add(new MenuItem(name,price));
+            }
         } else if (action.equals("addReview")) {
             String itemName = request.getParameter("itemName");
             int rating = Integer.parseInt(request.getParameter("rating"));
@@ -35,7 +38,8 @@ public class CafeteriaAppServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String action = request.getParameter("action");
+    	request.setCharacterEncoding("UTF-8");
+    	String action = request.getParameter("action");
 
         if (action.equals("displayMenu")) {
             request.setAttribute("menu", menu);

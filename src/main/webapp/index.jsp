@@ -1,16 +1,15 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Cafeteria App</title>
+	<meta charset="UTF-8">
+	<title>食堂アプリ</title>
 </head>
 <body>
-	<h1>Welcome to Cafeteria App</h1>
-    <a href="addMenuItem.jsp">Add Menu Item</a><br>
-    <a href="addReview.jsp">Add Review</a><br>
-    <a href="CafeteriaAppServlet?action=displayMenu">Display Menu</a><br>
-    <a href="CafeteriaAppServlet?action=displayReviews">Display Reviews</a><br>
+	<h1>うめコミへようこそ！</h1>
+    <a href="addMenuItem.jsp">メニューを追加</a><br>
+    <a href="addReview.jsp">メニューへのレビューを追加</a><br>
+    <a href="CafeteriaAppServlet?action=displayMenu">メニュー 一覧</a><br>
+    <a href="CafeteriaAppServlet?action=displayReviews">レビュー 一覧</a><br>
 </body>
 </html>

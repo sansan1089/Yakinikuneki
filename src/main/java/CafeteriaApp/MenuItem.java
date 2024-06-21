@@ -2,9 +2,9 @@ package CafeteriaApp;
 
 public class MenuItem {
     private String name;
-    private double price;
+    private int price;
 
-    public MenuItem(String name, double price) {
+    public MenuItem(String name, int price) {
         this.name = name;
         this.price = price;
     }
@@ -13,7 +13,7 @@ public class MenuItem {
         return name;
     }
 
-    public double getPrice() {
+    public int getPrice() {
         return price;
     }
 
